@@ -4,8 +4,8 @@ FROM node:18-alpine
 WORKDIR /blackcow-matchmaker-backend
 
 
-COPY . .
+COPY .ㅅ .
 
 
-#RUN node src/app.js
+RUN npm install
 CMD ["node", "src/app.js"]
