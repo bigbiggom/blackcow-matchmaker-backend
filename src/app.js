@@ -15,6 +15,8 @@ app.use(express.urlencoded({
 
 // routes
 app.use('/', indexRouter);
+// user routes
+app.use('/users', require('./routes/user/users')) 
 
 
 // TODO error
